@@ -26,7 +26,7 @@ clean:
 	$(CC) -c $(CFLAGS) checkOS.c -o ../obj/checkOS.o
 
 ../generator: $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o ../generator  
+	$(CC) $(CFLAGS) $(OBJ) -o ../generator -lm
 
 ../checkOS: ../obj/checkOS.o
 	$(CC) $(CFLAGS) ../obj/checkOS.o -o ../checkOS
